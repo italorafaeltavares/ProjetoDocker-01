@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  webserver:
+    build:
+      context: ./
+    ports:
+    - '8080:80'
+    volumes:
+    - ./app:/var/www/html
+networks:
+  webserver:
